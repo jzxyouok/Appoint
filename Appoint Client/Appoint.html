@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <title>汽车维修预约-预约单</title>
@@ -8,19 +9,119 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </head>
+
 <body>
-    <!-- Begin page content -->
-    <div class="container">
-      <div class="page-header">
-        <h1>Sticky footer</h1>
-      </div>
-      <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS.</p>
-      <p>Use <a href="../sticky-footer-navbar">the sticky footer with a fixed navbar</a> if need be, too.</p>
-    </div>
+    <form class="form-horizontal" role="form">
+        <!-- Begin page content -->
+        <div class="container">
+            <p class="text-center"><strong>预约单</strong></p>
+            <div class="form-group">
+                <label for="name" class="col-sm-2 control-label">姓名称呼</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="name" placeholder="请输入姓名">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="phonenum" class="col-sm-2 control-label">联系方式</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="phonenum" placeholder="请输入联系方式">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">选择车型</label>
+                <div class="col-sm-10">
+                    <select class="form-control">
+                        <option>请选择车型</option>
+                        <option>AE86</option>
+                        <option>FD-3S</option>
+                        <option>FD3S</option>
+                        <option>SW20</option>
+                        <option>Lancer Evolution III CE9A</option>
+                        <option>SKYLINE GT-R</option>
+                        <option>Silvia S13</option>
+                        <option>AE85</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">所在城市</label>
+                <div class="col-sm-10">
+                    <select class="form-control">
+                        <option>上海</option>
+                        <option>北京</option>
+                        <option>成都</option>
+                        <option>南昌</option>
+                        <option>香港</option>
+                        <option>京都</option>
+                        <option>银座</option>
+                        <option>北海道</option>
+                        <option>东京</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">故障类型</label>
+                <div class="col-sm-10">
+                    <label class="checkbox-inline">
+                        <input type="checkbox" value="option1"> 车漆
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" value="option2"> 外观
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" value="option3"> 发动机
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" value="option1"> 变速箱
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" value="option2"> 刹车
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" value="option3"> 离合器
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" value="option1"> 风挡玻璃
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" value="option2"> 车轮
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" value="option3"> 异响
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" value="option1"> 异味
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" value="option2"> 渗漏
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" value="option3"> 转向
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" value="option1"> 空调
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" value="option2"> 音响
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" value="option3"> 车内电器
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="datetime" class="col-sm-2 control-label">预约时间</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="datetime" placeholder="请输入预约时间">
+                </div>
+            </div>
+        </div>
+    </form>
     <footer class="footer">
         <div class="container">
-            <a class="text-muted">left</a><a class="text-muted">left</a>
+            <button type="button" class="btn btn-default btn-block">提交</button>
         </div>
     </footer>
 </body>
+
 </html>
