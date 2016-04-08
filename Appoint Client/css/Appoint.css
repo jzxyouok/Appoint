@@ -22,7 +22,19 @@ body {
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
 
-.container {
+body > .container {
+  padding: 60px 15px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/*.container {
   width: auto;
   max-width: 680px;
   padding: 0 2px;
@@ -33,4 +45,4 @@ body {
 .checkbox-inline {
     margin:0 10px;
     width: 20%
-}
+}*/
